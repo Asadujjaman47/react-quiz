@@ -42,7 +42,12 @@ export default function useVideoList(page){
             }
         }
 
+        // setTimeout(()=>{
+        //     fetchVideos();
+        // }, 2000);
+        
         fetchVideos();
+        
     }, [page]);
 
     /*
