@@ -40,7 +40,7 @@ export default function LoginForm() {
 
             <TextInput type="password" placeholder="Enter password" icon="lock" required value={password} onChange={(e) => setPassword(e.target.value)} />
 
-            <Button type="submit" disabled={loading}><span>Submit Now</span></Button>
+            <Button type="submit" disabled={loading}><span>Log In</span></Button>
 
             {error && <p className="error">{error}</p>}
 
