@@ -21,12 +21,18 @@ export default function Videos() {
                         video.noq > 0 ? 
                         (
                             // <Link to={"/quiz"} key={video.youtubeID}>
-                            <Link to={{
-                                pathname: `/quiz/${video.youtubeID}`,
-                                state: {
+                            // <Link to={{
+                            //     pathname: `/quiz/${video.youtubeID}`,
+                            //     state: {
+                            //       videoTitle: video.title,
+                            //     },
+                            //   }} key={video.youtubeID}
+                            // >
+                            <Link to={`/quiz/${video.youtubeID}`}
+                                state = {{
                                   videoTitle: video.title,
-                                },
-                              }} key={video.youtubeID}
+                                }}
+                                key={video.youtubeID}
                             >
                                 <Video title={video.title} id={video.youtubeID} noq={video.noq}/>
                             </Link>
